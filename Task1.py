@@ -15,6 +15,7 @@ def get_count(d):
     else:
         return 0
 
+
 res = get_count(d)
 print(res)
 
