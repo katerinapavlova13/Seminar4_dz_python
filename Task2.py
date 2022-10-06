@@ -4,15 +4,15 @@
 numbers = int(input("Введите натуральное число: "))
 
 def factors(numbers):
-    factor = list()
+    factors = list()
     i = 2
     while (i <= numbers):
         if (numbers % i) == 0:
-            factor.append(i)
+            factors.append(i)
             numbers //= i
         else:
             i += 1
-    return factor
+    return factors
 
 print(factors(numbers))
 
