@@ -9,14 +9,13 @@ import math
 
 d = float(input("Введите число от 0.1 до 0.0000000001: "))
 def get_count(d):
-    str_d = str(d)
-    if "." in str_d:
-        return len(str_d.split(".")[1].rstrip("0"))
+    if "." in str(d):
+        return len(str(d).split(".")[1].rstrip())
     else:
         return 0
 
-
 res = get_count(d)
+
 print(res)
 
 print(round(math.pi, res))
