@@ -60,6 +60,7 @@ for i in range(max(len(parEq1), len(parEq2)), -1, -1):
 def printEquation(equation: str):
     print(equation.replace(" 1x", "x").replace("x^1", 'x').replace("x^0", ''))
 
+
 printEquation(createEquation(parEq1))
 printEquation(createEquation(parEq2))
 printEquation(createEquation(resultEquation))
